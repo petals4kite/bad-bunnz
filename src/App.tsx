@@ -82,6 +82,7 @@ function App() {
         <ChevronRight />
       </Button>
       <GameSection />
+      <p className="p-2 m-4">Developed by <a href="http://www.discord.com/users/656833394512232449" target="_blank" rel="noopener noreferrer" className=' hover:underline'><strong>Petalsforkite</strong></a> to show love for BadBunnZ 🧡</p>
     </div>
   );
 }

@@ -64,7 +64,7 @@ export default function PartnershipCarousel({
   const displayPartners = [...partners, ...partners];
 
   return (
-    <div className={cn(
+    <section className={cn(
       "w-full min-h-screen flex flex-col justify-evenly py-8", // Center vertically using flex
       "bg-neutral-800", // Main background color
       className
@@ -145,6 +145,6 @@ export default function PartnershipCarousel({
           "bg-gradient-to-l from-neutral-800"
         )} />
       </div>
-    </div>
+    </section>
   );
 }

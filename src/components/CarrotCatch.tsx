@@ -49,16 +49,16 @@ export default function CarrotCatch() {
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <Card className="w-full max-w-md border-orange-200 shadow-md">
+      <Card className="w-full max-w-md border-neutral-200 shadow-md">
         <CardContent className="text-center py-4">
-          <h2 className="text-xl font-bold text-orange-500">🥕 Carrot Catch</h2>
+          <h2 className="text-xl font-bold text-neutral-900">Carrot Catch</h2>
           <p className="text-lg">Score: <span className="font-semibold">{score}</span></p>
         </CardContent>
       </Card>
 
       <div
         ref={gameRef}
-        className="relative w-full max-w-md h-[400px] bg-gradient-to-br from-orange-100 to-yellow-100 rounded-xl overflow-hidden border shadow-inner"
+        className="relative w-full max-w-md h-[400px] bg-neutral-800 rounded-xl overflow-hidden border shadow-inner"
       >
         {bunnies.map(b => (
           <div
@@ -73,11 +73,9 @@ export default function CarrotCatch() {
       </div>
 
       <Button
-        onClick={() => {
-          setScore(0);
-          setBunnies([]);
-        }}
-        className="bg-orange-100 border border-orange-300 hover:bg-orange-200 text-orange-600"
+        variant="outline"
+        className="hover:bg-neutral-900 hover:text-white transition-colors duration-200"
+        onClick={() => { setScore(0); setBunnies([]); }}
       >
         Reset Game
       </Button>

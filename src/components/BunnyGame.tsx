@@ -42,16 +42,16 @@ export default function BunnyGame() {
 
   return (
     <div className="flex flex-col items-center p-6 gap-4">
-      <Card className="w-full max-w-md bg-white shadow-lg border-pink-200 border-2">
+      <Card className="w-full max-w-md bg-white shadow-lg border-neutral-200 border-2">
         <CardContent className="text-center py-4">
-          <h2 className="text-2xl font-bold text-pink-500">🐰 Bunny Clicker</h2>
+          <h2 className="text-xl font-bold text-neutral-900">Click-A-Bunnz</h2>
           <p className="text-lg">Score: <span className="font-semibold">{score}</span></p>
         </CardContent>
       </Card>
 
       <div
         ref={gameRef}
-        className="relative w-full max-w-md h-[400px] bg-gradient-to-br from-pink-100 to-green-100 rounded-xl border shadow-inner overflow-hidden"
+        className="relative w-full max-w-md h-[400px] bg-neutral-800 rounded-xl border shadow-inner overflow-hidden"
       >
         {bunnies.map(bunny => (
           <div
@@ -67,7 +67,7 @@ export default function BunnyGame() {
 
       <Button
         variant="outline"
-        className="bg-white border-pink-300 hover:bg-pink-50 text-pink-600"
+        className="hover:bg-neutral-900 hover:text-white transition-colors duration-200"
         onClick={() => { setScore(0); setBunnies([]); }}
       >
         Reset Game
