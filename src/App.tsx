@@ -1,7 +1,7 @@
 import './App.css';
 import HeroSection from "@/components/hero-section";
 import PartnershipCarousel from './components/carousel-section';
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 
 // Import local logos
