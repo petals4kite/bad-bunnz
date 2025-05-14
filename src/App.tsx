@@ -1,5 +1,6 @@
 import './App.css';
 import HeroSection from "@/components/hero-section";
+import GameSection from "@/components/game-section";
 import PartnershipCarousel from './components/carousel-section';
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
@@ -80,6 +81,7 @@ function App() {
         <a href="https://testnet.rarible.fun/collections/megaethtestnet/0x48003fc38f46759a652c4705929fa801e2c22c26" target="_blank" rel="noopener noreferrer">Mint</a>
         <ChevronRight />
       </Button>
+      <GameSection />
     </div>
   );
 }
