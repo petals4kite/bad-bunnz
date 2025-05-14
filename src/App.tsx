@@ -75,7 +75,7 @@ function App() {
         scrollSpeed={100} // Adjusted from original 200, modify as needed
       />
       <Button
-        className={`fixed bottom-2.5 left-1/2 -translate-x-1/2 text-1xl px-4 py-2 transition duration-300 ease-in-out bg-white text-black hover:bg-black hover:text-white hover:scale-105`}
+        className={`fixed right-2.5 bottom-2.5 text-1xl px-4 py-2 transition duration-300 ease-in-out bg-white text-black hover:bg-black hover:text-white hover:scale-105`}
       >
         <a href="https://testnet.rarible.fun/collections/megaethtestnet/0x48003fc38f46759a652c4705929fa801e2c22c26" target="_blank" rel="noopener noreferrer">Mint</a>
         <ChevronRight />
