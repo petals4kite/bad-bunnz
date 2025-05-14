@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.animate-gradient-text {
+    background: linear-gradient(90deg, oklch(14.1% 0.005 285.823), oklch(55.2% 0.016 285.938), oklch(37% 0.013 285.805), oklch(21% 0.006 285.885));
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientText 5s linear infinite;
+}

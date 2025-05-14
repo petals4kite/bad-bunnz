@@ -1,25 +1,23 @@
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
+import { ChevronRight } from "lucide-react"
+import BadbunnzIMG from "@/assets/bad-bunnz.svg"
 
 export default function HeroSection() {
   return (
-    <section className="w-full min-h-full py-16 bg-white">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        {/* Text Content */}
-        <div className="md:w-1/2 space-y-6 text-center md:text-left">
-          <h1 className="text-4xl font-bold tracking-tight leading-tight">
-            BadBunnz
-          </h1>
-          <Button variant="outline">Button</Button>
-        </div>
-
-        {/* Image */}
-        <div className="md:w-1/2">
-          <img
-            src="/hero-image.png" // replace with your actual image path
-            alt="Hero"
-            className="w-full h-auto rounded-xl shadow-lg"
-          />
-        </div>
+    <section
+      className="min-h-screen w-full bg-no-repeat bg-right bg-contain flex items-center"
+      style={{
+        backgroundImage: `url(${BadbunnzIMG})`, // use correct relative path
+      }}
+    >
+      <div className="px-8 max-w-5xl">
+        <h1 className="text-9xl font-bold mb-6 animate-gradient-text">BadBunnz</h1>
+        <Button
+          className={`${buttonVariants({ variant: "outline" })} text-3xl px-8 py-4 transition duration-300 ease-in-out hover:bg-zinc-900 hover:text-white hover:scale-105`}
+        >
+          Mint       
+          <ChevronRight />
+        </Button>
       </div>
     </section>
   );
